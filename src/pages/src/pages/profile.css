@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #212529;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.container__header {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.container__imagem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #d6336c;
+}
+
+.container__div-header {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.header__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    color: #ffffff;
+
+}
+
+.header__button {
+    width: 169px;
+    height: 38px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    color: #ffffff;
+
+
+}
+
+.header__button:hover {
+    background-color: #D6336C;
+    border: none;
+
+}
+
+.container__cards {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.container__div-cards {
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+    width: 381px;
+    height: 243px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 41px 27px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.container__div-cards:hover {
+    background-color: #191c1f;
+    border: 2px solid #ffffff;
+    transition: 0.5s;
+}
+
+.cards__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cards__text {
+    width: 327px;
+    height: 63px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cards__button {
+    width: 93px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 0 8px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #ffffff;
+    margin-top: 27px;
+}
+
+.cards__button:hover {
+    background-color: #D6336C;
+    border: none;
+
+}
+
+@media(max-width:736px) {
+    .container__header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container__cards {
+        width: 100%;
+        margin: 0 0;
+        padding: 20px;
+
+    }
+
+}

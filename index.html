@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Git Search</title>
-  </head>
-  <body>
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/globalStyles.css">
 
-    <script type="module" src="./src/scripts/index.js"></script>
-  </body>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>Git Search</title>
+</head>
+
+<body>
+  <section class="container__primary">
+    <div class="primary__div">
+      <h1 class="primary__title">Git Search</h1>
+      <p class="primary__text">Encontre e se conecte com profissionais de forma rápida e fácil</p>
+    </div>
+  </section>
+  <section class="container__secundary">
+    <nav class="nav__secundary">
+      <h3 class="secundary__title">Procurar por um usuário </h3>
+      <div class="container__input">
+        <p class="secundary__text">Usuário github</p>
+        <label for="user"></label>
+        <input type="text" name="user" class="input__secundary" id="input"
+          placeholder="Digite um usuário do github aqui...">
+        <button class="button__secundary"> Ver Perfil do github</button>
+      </div>
+    </nav>
+  </section>
+  <script type="module" src="./src/scripts/index.js"></script>
+</body>
+
 </html>

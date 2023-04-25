@@ -12,11 +12,25 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/pages/error.css"> 
     <title>Git Search - User Not Found</title>
   </head>
   <body>
-
+    <div class="container">
+      <div class="container__nav">
+        <h1 class="title__nav">Ooops!</h1>
+        <p class="text__nav">Não encotramos o usuário que você procurou, vamos tentar novamente.</p>
+        <button id="button__error" class="button__nav">Nova Busca</button>
+      </div>
+      <div class="container__error">
+        <div class="container__rigth">
+          <div class="icon__error"><i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+            <div class="img__error"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="../scripts/error.js"></script>
   </body>
 </html>
